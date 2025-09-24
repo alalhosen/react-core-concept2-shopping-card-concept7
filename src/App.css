@@ -7,9 +7,19 @@
   box-shadow: 4px 4px 8px gray;
 }
 
+.card{
+  width: 300px;
+  text-align: center;
+}
+.img-card{
+  width: 100px;
+  align-items: center;
+}
 
-
-
+card-footer{
+  display: flex;
+  justify-content: space-around;
+}
 
 
 
