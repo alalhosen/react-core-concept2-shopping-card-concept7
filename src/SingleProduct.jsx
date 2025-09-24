@@ -6,16 +6,14 @@ const SingleProduct = ({product}) => {
         <div>
            <div className="card">
               <img className="img-card"
-                src="https://fabrilife.com/products/6194db577ef6d-square.jpg?v=20"
+                src={product.image}
                 alt=""
               />
-              <h1 className="text-2xl">Tittle Test</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                nesciunt commodi iure corrupti nostrum ut!
+              <h1 className="text-2xl">{product.title.slice(0,10)}</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quo facilis optio omnis harum aperiam?
               </p>
               <div className="card-footer">
-                <h1>520 $</h1>
+                <h1>{product.price} $</h1>
                 <button className="add-btn">Add To Cart</button>
               </div>
             </div>

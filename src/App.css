@@ -10,6 +10,10 @@
 .card{
   width: 300px;
   text-align: center;
+  justify-items: center;
+  border: 1px solid gray;
+  margin-bottom: 8px;
+  padding: 8px;
 }
 .img-card{
   width: 100px;
