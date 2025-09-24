@@ -1,6 +1,7 @@
 import React from 'react';
 
-const SingleProduct = () => {
+const SingleProduct = ({product}) => {
+    console.log(product)
     return (
         <div>
            <div className="card">
