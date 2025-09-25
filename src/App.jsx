@@ -38,7 +38,11 @@ function App() {
             {/******** cart container ********/}
           </div>
           <div className="cart-container">
-            <h1 className="text-2xl">This is cart</h1>
+            <h1 className="text-center font-extrabold text-2xl">This is cart</h1>
+            <div className="cart-title font-bold mt-4">
+              <h5>Name</h5>
+              <h5>Price</h5>
+            </div>
           </div>
         </div>
       </div>

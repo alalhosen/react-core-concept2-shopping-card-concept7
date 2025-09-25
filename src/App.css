@@ -32,3 +32,7 @@
   margin-left: 4px;
   background: lightgreen;
 }
+.cart-title{
+  display: flex;
+  justify-content: space-around;
+}
