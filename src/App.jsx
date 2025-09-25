@@ -12,6 +12,10 @@ function App() {
         setProducts(data);
       });
   }, []);
+
+  const handleCart = (p) => {
+    console.log(p );
+  };
   console.log(products);
 
   return (
@@ -28,9 +32,8 @@ function App() {
         <div className="main-container mt-8">
           <div className="cards-container">
             {products.map((pd) => (
-              <SingleProduct product={pd}></SingleProduct>
+              <SingleProduct product={pd} handleCart={handleCart}></SingleProduct>
             ))}
-
 
             {/******** cart container ********/}
           </div>
