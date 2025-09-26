@@ -50,7 +50,7 @@ function App() {
             <h1 className="text-center font-extrabold text-2xl">
               This is cart
             </h1>
-            <div className="cart-title font-bold mt-4">
+            <div className="cart-title font-bold mt-4 italic">
               <h5>Name</h5>
               <h5>Price</h5>
             </div>
