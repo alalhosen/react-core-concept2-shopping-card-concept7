@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SingleProduct = ({product, handleCart}) => {
-    console.log(handleCart)
+    // console.log(handleCart)
     return (
         <div>
            <div className="card space-y-4">

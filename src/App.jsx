@@ -4,6 +4,7 @@ import SingleProduct from "./SingleProduct";
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch("../public/fakeData.json")
@@ -14,9 +15,14 @@ function App() {
   }, []);
 
   const handleCart = (p) => {
-    console.log(p );
+    const isExist = cart.find((pd) => pd.id == p.id);
+    if (!isExist) {
+      setCart([...cart, p]);
+    } else {
+      alert("already in card");
+    }
   };
-  console.log(products);
+  console.log(cart);
 
   return (
     <>
@@ -32,13 +38,18 @@ function App() {
         <div className="main-container mt-8">
           <div className="cards-container">
             {products.map((pd) => (
-              <SingleProduct product={pd} handleCart={handleCart}></SingleProduct>
+              <SingleProduct
+                product={pd}
+                handleCart={handleCart}
+              ></SingleProduct>
             ))}
 
             {/******** cart container ********/}
           </div>
           <div className="cart-container">
-            <h1 className="text-center font-extrabold text-2xl">This is cart</h1>
+            <h1 className="text-center font-extrabold text-2xl">
+              This is cart
+            </h1>
             <div className="cart-title font-bold mt-4">
               <h5>Name</h5>
               <h5>Price</h5>
