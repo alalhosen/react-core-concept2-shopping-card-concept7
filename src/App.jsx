@@ -54,15 +54,13 @@ function App() {
               <h5>Name</h5>
               <h5>Price</h5>
             </div>
-            <div className="cart-info">
-              {
-                cart.map((item) =>(
-                  <div className="div">
-                    <h5>Name</h5>
-                    <h5>Price</h5>
-                  </div>
-                ))
-              }
+            <div>
+              {cart.map((item) => (
+                <div className="cart-info">
+                  <h5>{item.title.slice(0, 10)}</h5>
+                  <h5>{item.price}</h5>
+                </div>
+              ))}
             </div>
           </div>
         </div>
