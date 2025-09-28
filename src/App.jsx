@@ -54,6 +54,16 @@ function App() {
               <h5>Name</h5>
               <h5>Price</h5>
             </div>
+            <div className="cart-info">
+              {
+                cart.map((item) =>(
+                  <div className="div">
+                    <h5>Name</h5>
+                    <h5>Price</h5>
+                  </div>
+                ))
+              }
+            </div>
           </div>
         </div>
       </div>
