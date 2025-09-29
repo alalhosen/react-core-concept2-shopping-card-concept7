@@ -63,7 +63,7 @@ function App() {
                   <button className="border p-2">Delete</button>
                 </div>
               ))}
-            </div>
+            </div> 
           </div>
         </div>
       </div>
