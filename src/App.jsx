@@ -55,11 +55,12 @@ function App() {
               <h5>Price</h5>
             </div>
             <div>
-              {cart.map((item) => (
-                <div className="cart-info">
+              {cart.map((item, index) => (
+                <div className="cart-info space-y-2">
+                  <p>{index+1}</p>
                   <h5>{item.title.slice(0, 10)}</h5>
                   <h5>{item.price}</h5>
-                  <button>Delete</button>
+                  <button className="border p-2">Delete</button>
                 </div>
               ))}
             </div>
