@@ -59,6 +59,7 @@ function App() {
                 <div className="cart-info">
                   <h5>{item.title.slice(0, 10)}</h5>
                   <h5>{item.price}</h5>
+                  <button>Delete</button>
                 </div>
               ))}
             </div>
