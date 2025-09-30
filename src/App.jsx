@@ -22,7 +22,14 @@ function App() {
       alert("already in card");
     }
   };
-  console.log(cart);
+
+  const handleDelete=(id)=>{
+    console.log(id);
+  }
+
+
+
+  // console.log(cart);
 
   return (
     <>
@@ -60,7 +67,7 @@ function App() {
                   <p>{index+1}</p>
                   <h5>{item.title.slice(0, 10)}</h5>
                   <h5>{item.price}</h5>
-                  <button className="border p-2">Delete</button>
+                  <button onClick={()=>handleDelete(item.id)} className="border p-2">Delete</button>
                 </div>
               ))}
             </div> 
