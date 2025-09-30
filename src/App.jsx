@@ -25,7 +25,7 @@ function App() {
 
   const handleDelete = (id) => {
     const newCart = cart.filter((item) => item.id != id);
-    console.log(newCart);
+    setCart(newCart);
   };
 
   // console.log(cart);
