@@ -23,11 +23,10 @@ function App() {
     }
   };
 
-  const handleDelete=(id)=>{
-    console.log(id);
-  }
-
-
+  const handleDelete = (id) => {
+    const newCart = cart.filter((item) => item.id != id);
+    console.log(newCart);
+  };
 
   // console.log(cart);
 
@@ -64,13 +63,18 @@ function App() {
             <div>
               {cart.map((item, index) => (
                 <div className="cart-info space-y-2">
-                  <p>{index+1}</p>
+                  <p>{index + 1}</p>
                   <h5>{item.title.slice(0, 10)}</h5>
                   <h5>{item.price}</h5>
-                  <button onClick={()=>handleDelete(item.id)} className="border p-2">Delete</button>
+                  <button
+                    onClick={() => handleDelete(item.id)}
+                    className="border p-2"
+                  >
+                    Delete
+                  </button>
                 </div>
               ))}
-            </div> 
+            </div>
           </div>
         </div>
       </div>
